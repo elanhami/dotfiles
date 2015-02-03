@@ -1,0 +1,3 @@
+# vim:syntax=sh
+
+eval "$(rbenv init -)"

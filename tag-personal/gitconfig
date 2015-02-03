@@ -1,0 +1,20 @@
+[user]
+  name = Daniel Salmeron Amselem
+  email = daniel.amselem@gmail.com
+[push]
+  default = tracking
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[alias]
+  co = checkout
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[merge]
+  tool = opendiff
+[mergetool]
+  keepBackup = false

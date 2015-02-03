@@ -1,0 +1,2 @@
+EXCLUDES="fonts README.md rcrc Brewfile iterm"
+TAGS="personal"

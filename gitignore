@@ -1,0 +1,25 @@
+# Mac OS X #
+############
+*.DS_Store
+
+# VIM #
+#######
+TAGS
+tags
+.*.sw*
+*~
+*.un~
+**.orig
+.netrwhist
+
+# Rails #
+#########
+/.rvmrc
+/.rspec
+/.bundle
+/db/*.sqlite3
+/log/*
+/tmp/**/*
+/public/system/*
+/coverage/
+/spec/tmp/*
