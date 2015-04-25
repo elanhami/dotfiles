@@ -1,25 +1,25 @@
-# use vim as an editor
+# Use vim as an editor
 export EDITOR=vim
 
-# vi mode
+# Vi mode
 bindkey -v
 bindkey "^F" vi-cmd-mode
 bindkey jj vi-cmd-mode
 
-# add some readline keys back
+# Add some readline keys back
 bindkey "^A" beginning-of-line
 bindkey "^E" end-of-line
 
-# handy keybindings
+# Handy keybindings
 bindkey "^P" history-search-backward
 bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
-# automatically pushd
+# Automatically pushd
 export dirstacksize=5
 
-# awesome cd movements from zshkit
+# Awesome cd movements from zshkit
 setopt AUTOCD AUTOPUSHD PUSHDMINUS PUSHDSILENT PUSHDTOHOME
 setopt cdablevars
 
@@ -29,3 +29,6 @@ setopt EXTENDED_GLOB
 # This setting is for the new UTF-8 terminal support
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# Disable autocorrection
+unsetopt CORRECT_ALL
