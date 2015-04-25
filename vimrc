@@ -13,7 +13,6 @@ set autowriteall                  " Autosave the file always
 set background=light              " Use light background of the colorscheme
 set backspace=indent,eol,start    " Intuitive backspacing.
 set clipboard=unnamed             " Share OS X and Vim clipboard
-set colorcolumn=80                " 80 characters column
 set completeopt-=preview          " Do not show omnicomplete preview window
 set encoding=utf8                 " Force default encoding to UTF-8
 set expandtab                     " Use spaces instead of tabs
@@ -74,10 +73,10 @@ if has("autocmd")
     autocmd!
 
     autocmd FileType markdown                        setlocal spell textwidth=80
-    autocmd FileType vim,ruby,eruby,coffee           setlocal shiftwidth=2 tabstop=2 softtabstop=2
-    autocmd FileType html,rhtml,xml,feature,cucumber setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 et
-    autocmd FileType javascript,scss,yaml            setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2
-    autocmd FileType sass,css                        setlocal ai nosi shiftwidth=4 tabstop=4 softtabstop=4
+    autocmd FileType vim,ruby,eruby,coffee           setlocal shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=80
+    autocmd FileType html,rhtml,xml,feature,cucumber setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 et colorcolumn=80
+    autocmd FileType javascript,scss,yaml            setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=80
+    autocmd FileType sass,css                        setlocal ai nosi shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=80
     autocmd FileType json                            setlocal ai formatoptions=tcq2l textwidth=78 shiftwidth=2 softtabstop=2 tabstop=8 et
   augroup END
 
