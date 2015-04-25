@@ -60,6 +60,7 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:syntastic_check_on_open = 1
 let g:tagbar_autoclose = 1
 let g:vim_json_syntax_conceal = 0
+let g:go_fmt_command = "goimports"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
