@@ -4,5 +4,4 @@ ZSH_DIR=$HOME/.zsh
 if [[ ! (-o login) ]]; then
   source $ZSH_DIR/path
   source $ZSH_DIR/rbenv
-  source $ZSH_DIR/docker
 fi

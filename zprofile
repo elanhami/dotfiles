@@ -3,7 +3,6 @@ ZSH_DIR=$HOME/.zsh
 source $ZSH_DIR/prompt
 source $ZSH_DIR/path
 source $ZSH_DIR/rbenv
-source $ZSH_DIR/docker
 
 # makes color constants available
 autoload -U colors
