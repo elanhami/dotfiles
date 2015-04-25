@@ -59,6 +59,7 @@ let g:ctrlp_show_hidden = 1
 let g:SuperTabDefaultCompletionType = "context"
 let g:syntastic_check_on_open = 1
 let g:tagbar_autoclose = 1
+let g:vim_json_syntax_conceal = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -76,6 +77,7 @@ if has("autocmd")
     autocmd FileType html,rhtml,xml,feature,cucumber setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 et
     autocmd FileType javascript,scss,yaml            setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2
     autocmd FileType sass,css                        setlocal ai nosi shiftwidth=4 tabstop=4 softtabstop=4
+    autocmd FileType json                            setlocal ai formatoptions=tcq2l textwidth=78 shiftwidth=2 softtabstop=2 tabstop=8 et
   augroup END
 
   " Perform certain tasks when opening a file or creating a new file
@@ -89,7 +91,7 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.ftl    set filetype=html
     autocmd BufRead,BufNewFile *.rabl   set filetype=ruby
     autocmd BufRead,BufNewFile *.md     set filetype=markdown
-    autocmd BufRead,BufNewFile *.json   set filetype=javascript
+    autocmd BufRead,BufNewFile *.json   set filetype=json
     autocmd BufRead,BufNewFile *.hamlc  set filetype=haml
   augroup END
 else
@@ -99,6 +101,19 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MAPPINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("autocmd")
+  augroup file_types
+    au FileType go nmap <leader>r <Plug>(go-run)
+    au FileType go nmap <leader>b <Plug>(go-build)
+    au FileType go nmap <leader>t <Plug>(go-test)
+    au FileType go nmap <leader>c <Plug>(go-coverage)
+    au FileType go nmap <Leader>s <Plug>(go-implements)
+    au FileType go nmap <Leader>i <Plug>(go-info)
+    au FileType go nmap <Leader>d <Plug>(go-doc-browser)
+    au FileType go nmap <Leader>re <Plug>(go-rename)
+  augroup END
+endif
+
 " Toggle NERDTree panel
 map <silent> <leader>e :NERDTreeToggle<CR>
 " Comment current line
@@ -110,9 +125,9 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Index ctags on the current directory
 map <Leader>ct :!ctags -R .<CR><CR>
 " Activate :CtrlPTag
-map <Leader>t :CtrlPTag<CR>
+map <Leader>T :CtrlPTag<CR>
 " Toggle TagBar
-nnoremap <silent> <Leader>b :TagbarToggle<CR>
+nnoremap <silent> <Leader>B :TagbarToggle<CR>
 
 " Bubble current line down
 map <S-C-Down> :m +1 <CR>

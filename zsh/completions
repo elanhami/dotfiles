@@ -1,6 +1,6 @@
-# load our own completion functions
+# Load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
-# completion
+# Completion
 autoload -U compinit
 compinit
