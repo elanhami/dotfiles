@@ -3,6 +3,7 @@ upgrade
 
 install bazaar
 install ctags
+install dsh
 install graphviz
 install htop-osx
 install mercurial
