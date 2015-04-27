@@ -4,12 +4,12 @@ HISTFILE=~/.zsh_history
 SAVEHIST=10000
 HISTSIZE=10000 # Keep TONS of history
 
-setopt APPEND_HISTORY                   # Adds history
-setopt INC_APPEND_HISTORY               # Adds history incrementally
-setopt SHARE_HISTORY                    # Share it across sessions
-setopt HIST_IGNORE_ALL_DUPS             # Don't record dupes in history
+setopt APPEND_HISTORY        # Adds history
+setopt INC_APPEND_HISTORY    # Adds history incrementally
+setopt SHARE_HISTORY         # Share it across sessions
+setopt HIST_IGNORE_ALL_DUPS  # Don't record dupes in history
 setopt HIST_REDUCE_BLANKS
-setopt EXTENDED_HISTORY                 # Add timestamps to history
+setopt EXTENDED_HISTORY      # Add timestamps to history
 
 bindkey "^R" history-incremental-search-backward # use incremental search
 
