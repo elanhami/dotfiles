@@ -1,24 +1,36 @@
-update
-upgrade
-
-install bazaar
-install ctags
-install dsh
-install graphviz
-install htop-osx
-install mercurial
-install nginx
-install node
-install phantomjs
-install postgis
-install postgresql
-install rbenv
-install redis
-install ruby-build
-install the_silver_searcher
-install vcprompt
-install vim
-install watch
-install wrk
-
-cleanup
+tap 'caskroom/cask'
+tap 'homebrew/binary'
+tap 'homebrew/bundle'
+tap 'homebrew/dupes'
+tap 'homebrew/versions'
+tap 'thoughtbot/formulae'
+tap 'thoughtbot/rcm'
+brew 'android-sdk'
+brew 'bazaar'
+brew 'ctags'
+brew 'dsh'
+brew 'gnuplot'
+brew 'go'
+brew 'graphviz'
+brew 'htop-osx'
+brew 'mercurial'
+brew 'nginx'
+brew 'nmap'
+brew 'node'
+brew 'phantomjs'
+brew 'postgis'
+brew 'postgresql'
+brew 'rbenv'
+brew 'reattach-to-user-namespace'
+brew 'rcm'
+brew 'redis'
+brew 'ruby-build'
+brew 'sqlite'
+brew 'ssh-copy-id'
+brew 'the_silver_searcher'
+brew 'tmux'
+brew 'tree'
+brew 'vcprompt'
+brew 'vim'
+brew 'wget'
+brew 'zsh-syntax-highlighting'

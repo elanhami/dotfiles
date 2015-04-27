@@ -1,13 +1,14 @@
 #!/bin/sh
 
-# START - VIM PLUGINS #
 if [ ! -e $HOME/.vim/bundle/vundle ]; then
-  echo "Installing VIM plugins ..."
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
+echo "Installing VIM plugins ..."
 vim -u $HOME/.vimrc.bundles +PluginInstall +qa
 
 cd $HOME/.dotfiles
+brew tap Homebrew/bundle
+
+echo "Installing brew formulas ..."
 brew bundle
-# END - VIM PLUGINS #
