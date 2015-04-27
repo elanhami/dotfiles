@@ -4,10 +4,6 @@
 HOMEBREWPATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin
 PATH=$HOMEBREWPATH:$PATH
 
-# Heroku Toolbelt PATH
-HEROKU=/usr/local/heroku/bin
-PATH=$PATH:$HEROKU
-
 # NPM PATH
 NPM=/usr/local/share/npm/bin
 PATH=$PATH:$NPM
@@ -21,9 +17,5 @@ PATH=$PATH:$GOPATH/bin
 NODE_PATH=/usr/local/lib/node:/Users/damselem/.homebrew/lib/node_modules
 export NODE_PATH
 PATH=$PATH:$NODE_PATH
-
-# POSTGRESAPP PATH
-POSTGRESAPP_PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin
-PATH=$PATH:$POSTGRESAPP_PATH
 
 export PATH
