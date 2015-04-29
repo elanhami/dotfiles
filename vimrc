@@ -60,6 +60,9 @@ let g:syntastic_check_on_open = 1
 let g:tagbar_autoclose = 1
 let g:vim_json_syntax_conceal = 0
 let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
