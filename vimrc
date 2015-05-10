@@ -110,10 +110,12 @@ if has("autocmd")
     au FileType go nmap <leader>b <Plug>(go-build)
     au FileType go nmap <leader>t <Plug>(go-test)
     au FileType go nmap <leader>c <Plug>(go-coverage)
-    au FileType go nmap <Leader>s <Plug>(go-implements)
-    au FileType go nmap <Leader>i <Plug>(go-info)
-    au FileType go nmap <Leader>d <Plug>(go-doc-browser)
-    au FileType go nmap <Leader>re <Plug>(go-rename)
+    au FileType go nmap <leader>s <Plug>(go-implements)
+    au FileType go nmap <leader>i <Plug>(go-info)
+    au FileType go nmap <leader>d <Plug>(go-doc-browser)
+    au FileType go nmap <leader>re <Plug>(go-rename)
+
+    au FileType scss,css nnoremap <buffer> <leader>f :call CSScomb()<CR>
   augroup END
 endif
 
@@ -188,3 +190,7 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
+function! CSScomb()
+  execute "silent !csscomb " . expand('%:p')
+  redraw!
+endfunction
