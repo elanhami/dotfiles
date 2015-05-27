@@ -79,6 +79,7 @@ if has("autocmd")
     autocmd FileType vim,ruby,eruby,coffee           setlocal shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=80
     autocmd FileType html,rhtml,xml,feature,cucumber setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 et colorcolumn=80
     autocmd FileType javascript,scss,yaml            setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=80
+    autocmd FileType java                            setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=80
     autocmd FileType sass,css                        setlocal ai nosi shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=80
     autocmd FileType json                            setlocal ai formatoptions=tcq2l textwidth=78 shiftwidth=2 softtabstop=2 tabstop=8 et
   augroup END
