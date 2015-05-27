@@ -13,5 +13,5 @@ alias wws='cd ~/dev/waze'
 alias gws='cd ~/dev/personal/go/src'
 
 # Rclone
-alias 1pass-sync='rclone copy Google\ Drive/Personal/1Password.agilekeychain dropbox:1Password.agilekeychain -v'
-alias ynab-sync='rclone copy dropbox:YNAB ~/Google\ Drive/Personal/YNAB -v'
+alias 1pass-sync='rclone copy Google\ Drive/Sync/1Password/1Password.agilekeychain dropbox:1Password.agilekeychain -v'
+alias ynab-sync='rclone copy dropbox:YNAB ~/Google\ Drive/Sync/YNAB -v'
