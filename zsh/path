@@ -26,4 +26,9 @@ PATH=$GCP_PATH:$PATH
 POSTGRES_APP_PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin
 PATH=$PATH:$POSTGRES_APP_PATH
 
+# JAVAHOME
+JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME
+
+
 export PATH
