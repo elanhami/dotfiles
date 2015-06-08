@@ -135,15 +135,6 @@ map <Leader>T :CtrlPTag<CR>
 " Toggle TagBar
 nnoremap <silent> <Leader>B :TagbarToggle<CR>
 
-" Bubble current line down
-map <S-C-Down> :m +1 <CR>
-" Bubble current line up
-map <S-C-Up> :m -2 <CR>
-" Bubble visual block down
-vnoremap <silent> <S-C-Down> :m '>+1<CR>gv=gv
-" Bubble visual block up
-vnoremap <silent> <S-C-Up> :m '<-2<CR>gv=gv
-
 " Bubble current line down using h,j,k,l
 map <S-C-j> :m +1 <CR>
 " Bubble current line up  using h,j,k,l
