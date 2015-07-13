@@ -1,34 +1,17 @@
 # vim:syntax=sh
 
+source $ZSH_DIR/envs
+
 # HOMEBREW PATH
-HOMEBREWPATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin
-PATH=$HOMEBREWPATH:$PATH
+PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 
 # NPM PATH
-NPM=/usr/local/share/npm/bin
-PATH=$PATH:$NPM
+PATH=$PATH:/usr/local/share/npm/bin
 
 # GO PATH
-GOPATH=$HOME/dev/personal/go
-export GOPATH
-PATH=$PATH:$GOPATH/bin
+PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # NODE PATH
-NODE_PATH=/usr/local/lib/node:$HOME/.homebrew/lib/node_modules
-export NODE_PATH
 PATH=$PATH:$NODE_PATH
-
-# GCP
-GCP_PATH=$HOME/dev/personal/google-cloud-sdk/bin
-PATH=$GCP_PATH:$PATH
-
-# POSTGRES APP PATH
-POSTGRES_APP_PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin
-PATH=$PATH:$POSTGRES_APP_PATH
-
-# JAVAHOME
-JAVA_HOME=$(/usr/libexec/java_home)
-export JAVA_HOME
-
 
 export PATH

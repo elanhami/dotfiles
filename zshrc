@@ -5,3 +5,4 @@ source $ZSH_DIR/aliases
 source $ZSH_DIR/completions
 source $ZSH_DIR/syntax
 source $ZSH_DIR/history
+source $ZSH_DIR/envs

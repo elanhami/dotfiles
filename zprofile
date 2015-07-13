@@ -2,7 +2,6 @@ ZSH_DIR=$HOME/.zsh
 
 source $ZSH_DIR/prompt
 source $ZSH_DIR/path
-source $ZSH_DIR/rbenv
 
 # makes color constants available
 autoload -U colors
