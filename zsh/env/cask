@@ -1,1 +1,1 @@
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=~/.homebrew/Caskroom --binarydir=~/.homebrew/bin"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --binarydir=~/.homebrew/bin"
