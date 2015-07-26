@@ -6,7 +6,7 @@ setopt prompt_subst
 #This is a special function that gets called before each prompt is displayed
 function precmd {
     set_iterm2_tab_name
-    PROMPT="$(user_name)$(current_working_directory)$(colorized_rvm_prompt)$(colorized_vcprompt)"
+    PROMPT="$(user_name)$(current_working_directory)$(colorized_vcprompt) "
 }
 
 function user_name {
@@ -18,11 +18,7 @@ function current_working_directory {
 }
 
 function colorized_vcprompt {
-    echo "%{$fg[cyan]%}$(vcprompt)%{$reset_color%}"
-}
-
-function colorized_rvm_prompt {
-    echo "%{$fg[green]%}[$(rbenv version-name)]%{$reset_color%}"
+    echo "%{$fg[cyan]%}$(vcprompt -f '[%n:%b](%m%u)')%{$reset_color%}"
 }
 
 function set_iterm2_tab_name {

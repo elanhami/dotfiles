@@ -13,5 +13,5 @@ These dotfiles use [rcm](https://github.com/thoughtbot/rcm). To install:
 
 ## Installation
 
-    git clone https://github.com/damselem/dotfiles.git ~/.dotfiles
+    git clone https://github.com/elanhami/dotfiles.git ~/.dotfiles
     env RCRC=$HOME/.dotfiles/rcrc rcup -k

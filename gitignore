@@ -12,14 +12,3 @@ tags
 **.orig
 .netrwhist
 
-# Rails #
-#########
-/.rvmrc
-/.rspec
-/.bundle
-/db/*.sqlite3
-/log/*
-/tmp/**/*
-/public/system/*
-/coverage/
-/spec/tmp/*

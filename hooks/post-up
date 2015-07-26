@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#Load all new ZSH settings
+source $HOME/.zshrc
+
 if [ ! -e $HOME/.vim/bundle/vundle ]; then
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi

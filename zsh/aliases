@@ -1,17 +1,9 @@
 # Unix
 alias ls='ls -laGFh'
 
-# Bundler
-alias be='bundle exec'
-
 # Git
 alias gs='git status'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 # Workspace
 alias wws='cd ~/dev/waze'
-alias gws='cd ~/dev/personal/go/src'
-
-# Rclone
-alias 1pass-sync='rclone copy ~/Google\ Drive/Sync/1Password/1Password.agilekeychain dropbox:1Password.agilekeychain -v'
-alias ynab-sync='rclone copy dropbox:YNAB ~/Google\ Drive/Sync/YNAB -v'

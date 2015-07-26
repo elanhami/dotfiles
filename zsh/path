@@ -5,13 +5,7 @@ source $ZSH_DIR/envs
 # HOMEBREW PATH
 PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 
-# NPM PATH
-PATH=$PATH:/usr/local/share/npm/bin
-
 # GO PATH
 PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-# NODE PATH
-PATH=$PATH:$NODE_PATH
 
 export PATH

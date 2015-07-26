@@ -10,7 +10,7 @@ let &t_SI .= "\<Esc>[5 q"         " Blinking bar cursor when in insert mode
 let &t_EI .= "\<Esc>[2 q"         " Solid block cursor when in normal mode
 
 set autowriteall                  " Autosave the file always
-set background=light              " Use light background of the colorscheme
+set background=dark               " Use dark background of the colorscheme
 set backspace=indent,eol,start    " Intuitive backspacing.
 set clipboard=unnamed             " Share OS X and Vim clipboard
 set completeopt-=preview          " Do not show omnicomplete preview window

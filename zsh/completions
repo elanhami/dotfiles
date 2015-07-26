@@ -1,8 +1,6 @@
 # Load our own completion functions
-fpath=(~/.zsh/completion $fpath)
+#fpath=(~/.zsh/completion $fpath)
 
 # Completion
 autoload -U compinit
 compinit
-
-[[ -f "${HOME}/dev/personal/google-cloud-sdk/completion.zsh.inc" ]] && source "${HOME}/dev/personal/google-cloud-sdk/completion.zsh.inc"
