@@ -75,13 +75,14 @@ if has("autocmd")
   augroup file_types
     autocmd!
 
-    autocmd FileType markdown                        setlocal spell textwidth=80
-    autocmd FileType vim,ruby,eruby,coffee           setlocal shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=80
-    autocmd FileType html,rhtml,xml,feature,cucumber setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 et colorcolumn=80
-    autocmd FileType javascript,yaml                 setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=80
-    autocmd FileType java                            setlocal ai nosi shiftwidth=2 tabstop=2 softtabstop=2 colorcolumn=80
-    autocmd FileType sass,css,scss                   setlocal ai nosi shiftwidth=4 tabstop=4 softtabstop=4 colorcolumn=80
-    autocmd FileType json                            setlocal ai formatoptions=tcq2l textwidth=78 shiftwidth=2 softtabstop=2 tabstop=8 et
+    autocmd FileType markdown                        setl spell tw=80
+    autocmd FileType vim,ruby,eruby,coffee           setl ai sw=2 ts=2 sts=2 cc=80
+    autocmd FileType html,rhtml,xml,feature,cucumber setl ai sw=2 ts=2 sts=2 et cc=80
+    autocmd FileType javascript,yaml                 setl ai sw=2 ts=2 sts=2 cc=80
+    autocmd FileType java                            setl ai sw=2 ts=2 sts=2 cc=80
+    autocmd FileType sass,css,scss                   setl ai sw=4 ts=4 sts=4 cc=80
+    autocmd FileType nginx                           setl ai sw=4 ts=4 sts=4
+    autocmd FileType json                            setl ai fo=tcq2l tw=80 sw=2 sts=2 ts=8 et
   augroup END
 
   " Perform certain tasks when opening a file or creating a new file

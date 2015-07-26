@@ -3,24 +3,10 @@
 # expand functions in the prompt
 setopt prompt_subst
 
-#This is a special function that gets called before each prompt is displayed
-function precmd {
-    set_iterm2_tab_name
-    PROMPT="$(user_name)$(current_working_directory)$(colorized_vcprompt) "
-}
+fpath=($HOME/.dotfiles/zsh/themes $fpath)
 
-function user_name {
-    echo "%{$fg[red]%}%n:%{$reset_color%}"
-}
+# load zsh prompt extension
+autoload -Uz promptinit
+promptinit
 
-function current_working_directory {
-    echo "%{$fg[magenta]%}[%~]%{$reset_color%}"
-}
-
-function colorized_vcprompt {
-    echo "%{$fg[cyan]%}$(vcprompt -f '[%n:%b](%m%u)')%{$reset_color%}"
-}
-
-function set_iterm2_tab_name {
-    echo -ne "\\033]0;${PWD##*/}\\007"
-}
+prompt steeef
