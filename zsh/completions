@@ -1,7 +1,6 @@
 # vim:syntax=sh
 
-# Load our own completion functions
-fpath=($HOME/.zsh/completion $fpath)
+# Load completion functions
 fpath=($HOME/.homebrew/share/zsh-completions $fpath)
 
 # Completion
