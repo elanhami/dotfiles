@@ -1,3 +1,5 @@
+# vim:syntax=sh
+
 [[ -f ~/.homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source ~/.homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 

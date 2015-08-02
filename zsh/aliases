@@ -1,3 +1,5 @@
+# vim:syntax=sh
+
 # Unix
 alias ls='ls -laGFh'
 

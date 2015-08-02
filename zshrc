@@ -1,3 +1,5 @@
+# vim:syntax=sh
+
 ZSH_DIR=$HOME/.zsh
 
 source $ZSH_DIR/config

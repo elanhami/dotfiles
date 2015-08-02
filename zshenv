@@ -1,3 +1,5 @@
+# vim:syntax=sh
+
 ZSH_DIR=$HOME/.zsh
 
 # If we are running in login mode, let .zprofile set the PATH. Otherwise it would be duplicated.

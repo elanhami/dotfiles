@@ -1,1 +1,3 @@
+# vim:syntax=sh
+
 export GOPATH=$HOME/dev/personal/go
