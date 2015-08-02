@@ -3,3 +3,4 @@
 source $ZSH_DIR/env/cask
 source $ZSH_DIR/env/go
 source $ZSH_DIR/env/java
+source $ZSH_DIR/env/man
