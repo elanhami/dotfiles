@@ -42,8 +42,8 @@ set wildmode=list:longest         " Complete files like a shell.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGINS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
+if filereadable(expand("~/.dotfiles/vimrc.bundles"))
+  source ~/.dotfiles/vimrc.bundles
 endif
 
 colorscheme solarized

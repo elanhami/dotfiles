@@ -1,6 +1,6 @@
 # vim:syntax=sh
 
-ZSH_DIR=$HOME/.zsh
+ZSH_DIR=$HOME/.dotfiles/zsh
 
 # If we are running in login mode, let .zprofile set the PATH. Otherwise it would be duplicated.
 if [[ ! (-o login) ]]; then

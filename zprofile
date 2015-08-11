@@ -1,6 +1,6 @@
 # vim:syntax=sh
 
-ZSH_DIR=$HOME/.zsh
+ZSH_DIR=$HOME/.dotfiles/zsh
 
 source $ZSH_DIR/prompt
 source $ZSH_DIR/path
