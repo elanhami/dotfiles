@@ -16,8 +16,5 @@ brew tap Homebrew/bundle
 echo "Installing brew formulas..."
 brew bundle
 
-echo "Installing pip..."
-sudo easy_install pip
-
 echo "Installing pip packages..."
 source pipfile
