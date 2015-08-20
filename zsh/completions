@@ -6,3 +6,6 @@ fpath=($HOME/.homebrew/share/zsh-completions $fpath)
 # Completion
 autoload -U compinit
 compinit
+
+# Completions for aws client
+source /Users/elanh/.homebrew/share/zsh/site-functions/_aws

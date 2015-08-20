@@ -1,18 +1,26 @@
 # vim:syntax=sh
 
+# Environment
+alias hosts="sudo vim /etc/hosts"
+alias printhosts="cat /etc/hosts"
+
 # zsh
 alias reload=". ~/.zshrc && . ~/.zprofile && echo 'ZSH config reloaded from ~/.zshrc and ~/.zprofile'"
 
 # Unix
-alias ls='ls -laGFh'
+alias ls="ls -laGFh"
 
 # Git
-alias gs='git status'
+alias gs="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 # SSH
-alias sshtun='ssh -fN'
-alias sshlist='ps -ef | grep "ssh -fN"'
+alias sshtun="ssh -fN"
+alias sshlist="ps -ef | grep 'ssh -fN'"
 
 # Workspace
-alias wws='cd ~/dev/waze'
+alias wws="cd ~/dev/waze"
+
+# Launch commands
+alias start_cass="cassandra -p ~/tmp/casspidfile"
+alias stop_cass="~/.homebrew/share/stop-server"
